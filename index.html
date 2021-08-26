@@ -1,19 +1,190 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Hamid's Portfolio</title>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hamid's Portfolio</title>
+  <!-- Latest compiled and minified CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+  <!-- jQuery library -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+  <!-- Popper JS -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+
+  <!-- Latest compiled JavaScript -->
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </head>
+
 <body>
-    <div class="container-fluid">
-        <h1>My First Bootstrap Page</h1>
-        <p>This is some text.</p>
-      </div> 
+  <main class="bg-light">
+    <header class="bg-white">
+      <nav class="navbar navbar-expand-lg navbar-light">
+        <div class="container pt-3">
+          <a class="navbar-brand font-weight-bold text-primary" style="font-size: x-large;" href="#">My Logo</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+            aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#" style="font-size: large;">Portfolio</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" href="#" style="font-size: large;">About</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" href="#" style="font-size: large;">Contact</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <div class="px-4 py-5 text-center border-bottom border-light"
+      style="background-image: url(images/main-desktop-background.png); background-size: cover; height: 80vh; border-bottom-left-radius: 110px;">
+
+      <div class="container col-lg-6 d-flex flex-column justify-content-start my-3" style="max-width: 60vw;">
+        <h1 class="display-5 fw-bold text-left">I’m Vishal <br>Glad to see you!</h1>
+        <p class="lead mb-4 text-left my-2">I’m a software developer! I can help you build a product, feature or website
+          Look through
+          some of my work and experience! If you like what you see and have a project you need coded, don’t hestiate to
+          contact me.</p>
+        <h2 class="h4 fw-bold text-left text-primary">LET’S CONNECT</h2>
+        <ul class="list-inline d-flex justify-content-start my-2">
+          <li class="list-inline-item pr-3"><a href="#"><img class="img-fluid" src="images/twitter.png"
+                alt="twitter"></a></li>
+          <li class="list-inline-item pr-3"><a href="#"><img class="img-fluid" src="images/Linkedin.png"
+                alt="linkedin"></a></li>
+          <li class="list-inline-item pr-3"><a href="#"><img class="img-fluid" src="images/medium.png" alt="medium"></a>
+          </li>
+          <li class="list-inline-item pr-3"><a href="#"><img class="img-fluid" src="images/github.png" alt="github"></a>
+          </li>
+          <li class="list-inline-item pr-3"><a href="#"><img class="img-fluid" src="images/angellist.png"
+                alt="angellist"></a></li>
+        </ul>
+      </div>
+    </div>
+    <h1 class="container d-flex justify-content-center fw-bold text-primary my-5"> My Projects</h1>
+    <section class="container d-flex justify-content-center">
+      <div class="card mb-3 border border-light"
+        style="width:70vw; border-radius: 20px; border-color:grey; box-shadow: 2px solid grey;">
+        <div class="row no-gutters ">
+          <div class="col-md-6 p-3">
+            <img src="https://source.unsplash.com/user/erondu/1600x900" class="card-img img-fluid" alt="project1">
+          </div>
+          <div class="col-md-6">
+            <div class="card-body">
+              <h5 class="card-title h1 font-bold">Tonic</h5>
+              <ul class="list-inline d-flex justify-content-start">
+                <li class="list-inline-item h6 pr-1">CANOPY </li>
+                <li class="list-inline-item pr-1">Back End Dev </li>
+                <li class="list-inline-item pr-1">2015</li>
+              </ul>
+              <p class="card-text">A daily selection of privately personalized reads; no accounts or sign-ups required.
+              </p>
+              <ul class="list-inline d-flex justify-content-start">
+                <li class="list-inline-item p-2 text-primary" style="background-color: #ebebff; border-radius: 10px;">html</li>
+                <li class="list-inline-item p-2 text-primary" style="background-color: #ebebff; border-radius: 10px;">css</li>
+                <li class="list-inline-item p-2 text-primary" style="background-color: #ebebff; border-radius: 10px;">javascript</li>
+            </ul>
+            <button type="button" class="btn btn-outline-primary">See Project</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="container d-flex justify-content-center my-5">
+      <div class="card mb-3 border border-light"
+        style="max-width: 70vw; border-radius: 20px; border-color:grey; box-shadow: 2px solid grey;">
+        <div class="row no-gutters">
+          <div class="col-md-6 p-3">
+            <img src="https://source.unsplash.com/user/erondu/1600x900" class="card-img img-fluid" alt="...">
+          </div>
+          <div class="col-md-6">
+            <div class="card-body">
+              <h5 class="card-title h1 font-bold">Tonic</h5>
+              <ul class="list-inline d-flex justify-content-start">
+                <li class="list-inline-item h6 pr-1">CANOPY </li>
+                <li class="list-inline-item pr-1">Back End Dev </li>
+                <li class="list-inline-item pr-1">2015</li>
+              </ul>
+              <p class="card-text">A daily selection of privately personalized reads; no accounts or sign-ups required.
+              </p>
+              <ul class="list-inline d-flex justify-content-start">
+                <li class="list-inline-item p-2 text-primary" style="background-color: #ebebff; border-radius: 10px;">html</li>
+                <li class="list-inline-item p-2 text-primary" style="background-color: #ebebff; border-radius: 10px;">css</li>
+                <li class="list-inline-item p-2 text-primary" style="background-color: #ebebff; border-radius: 10px;">javascript</li>
+            </ul>
+            <button type="button" class="btn btn-outline-primary">See Project</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="container d-flex justify-content-center my-5">
+      <div class="card mb-3 border border-light"
+        style="max-width: 70vw; border-radius: 20px; border-color:grey; box-shadow: 2px solid grey;">
+        <div class="row no-gutters">
+          <div class="col-md-6 p-3">
+            <img src="https://source.unsplash.com/user/erondu/1600x900" class="card-img img-fluid" alt="...">
+          </div>
+          <div class="col-md-6">
+            <div class="card-body">
+              <h5 class="card-title h1 font-bold">Tonic</h5>
+              <ul class="list-inline d-flex justify-content-start">
+                <li class="list-inline-item h6 pr-1">CANOPY </li>
+                <li class="list-inline-item pr-1">Back End Dev </li>
+                <li class="list-inline-item pr-1">2015</li>
+              </ul>
+              <p class="card-text">A daily selection of privately personalized reads; no accounts or sign-ups required.
+              </p>
+              <ul class="list-inline d-flex justify-content-start">
+                <li class="list-inline-item p-2 text-primary" style="background-color: #ebebff; border-radius: 10px;">html</li>
+                <li class="list-inline-item p-2 text-primary" style="background-color: #ebebff; border-radius: 10px;">css</li>
+                <li class="list-inline-item p-2 text-primary" style="background-color: #ebebff; border-radius: 10px;">javascript</li>
+            </ul>
+            <button type="button" class="btn btn-outline-primary">See Project</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="container d-flex justify-content-center my-5">
+      <div class="card mb-3 border border-light"
+        style="max-width: 70vw; border-radius: 20px; border-color:grey; box-shadow: 2px solid grey;">
+        <div class="row no-gutters">
+          <div class="col-md-6 p-3">
+            <img src="https://source.unsplash.com/user/erondu/1600x900" class="card-img img-fluid" alt="...">
+          </div>
+          <div class="col-md-6">
+            <div class="card-body">
+              <h5 class="card-title h1 font-bold">Tonic</h5>
+              <ul class="list-inline d-flex justify-content-start">
+                <li class="list-inline-item h6 pr-1">CANOPY </li>
+                <li class="list-inline-item pr-1">Back End Dev </li>
+                <li class="list-inline-item pr-1">2015</li>
+              </ul>
+              <p class="card-text">A daily selection of privately personalized reads; no accounts or sign-ups required.
+              </p>
+              <ul class="list-inline d-flex justify-content-start">
+                <li class="list-inline-item p-2 text-primary" style="background-color: #ebebff; border-radius: 10px;">html</li>
+                <li class="list-inline-item p-2 text-primary" style="background-color: #ebebff; border-radius: 10px;">css</li>
+                <li class="list-inline-item p-2 text-primary" style="background-color: #ebebff; border-radius: 10px;">javascript</li>
+            </ul>
+            <button type="button" class="btn btn-outline-primary">See Project</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
 </body>
+
 </html>
